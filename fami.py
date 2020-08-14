@@ -32,10 +32,12 @@ if __name__ == '__main__':
     password = driver.find_element_by_id('PWD')
     cpinput = driver.find_element_by_id('txtCheckCode')
     loginButton = driver.find_element_by_xpath('//*[@id="login_btn"]')
-
+    acc = input("帳號: ")
+    pwd = input("密碼: ")
     account.send_keys("")
     password.send_keys("")
     cpinput.send_keys(capturaNum)
+    print(capturaNum)
     #TODO: Why no click loginbutton then login?
 
     driver.save_screenshot("screenshot1.png")
